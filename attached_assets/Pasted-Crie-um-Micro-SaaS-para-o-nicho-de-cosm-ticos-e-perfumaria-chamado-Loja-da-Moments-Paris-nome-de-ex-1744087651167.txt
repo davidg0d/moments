@@ -1,0 +1,175 @@
+Crie um Micro SaaS para o nicho de cosméticos e perfumaria chamado Loja da Moments Paris (nome de exemplo). A plataforma será no modelo self-service e deverá permitir que consultoras e revendedores criem suas próprias lojas virtuais personalizadas com até 30 produtos.
+
+🎯 Objetivo da plataforma:
+Criar lojas virtuais personalizadas com catálogo
+
+Gerar pedidos via WhatsApp, com checkout e carrinho
+
+Permitir clonagem de catálogos
+
+Oferecer login para clientes, lojistas e administradores
+
+Monetizar via plano mensal fixo (R$ 29,90/mês)
+
+🧱 FUNCIONALIDADES PRINCIPAIS
+1. 👤 Sistema de Login (3 níveis):
+a) Cliente
+Criar conta para salvar favoritos, ver pedidos anteriores e manter o carrinho
+
+Dados: nome, e-mail, senha
+
+b) Lojista
+Cria sua loja automaticamente após cadastro
+
+Acessa painel para:
+
+Alterar nome da loja (ex: "Loja da Moments Paris")
+
+Alterar número do WhatsApp (ex: 19987553029)
+
+Alterar logo da loja
+
+Adicionar/editar até 30 produtos:
+
+Nome
+
+Imagem
+
+Descrição
+
+Preço
+
+Visualizar pedidos recebidos
+
+c) Administrador
+Painel protegido por login
+
+Pode:
+
+Duplicar/clonar catálogos
+
+Excluir lojas/catálogos existentes
+
+Gerenciar dados dos lojistas
+
+Ver estatísticas (nº de lojas, pedidos totais, etc.)
+
+Gerenciar pagamentos
+
+Ativar/desativar funcionalidades por loja
+
+2. 🛍️ Loja Virtual (por Lojista)
+Estrutura:
+Logo da loja
+
+Nome da loja
+
+Botão fixo do WhatsApp no topo ou canto inferior
+
+Seção de produtos com até 30 itens
+
+Cada produto com:
+
+Imagem
+
+Nome
+
+Descrição curta
+
+Preço
+
+Botão “Adicionar ao Carrinho”
+
+3. 🛒 Carrinho + Checkout
+Carrinho flutuante ou página dedicada
+
+Cliente pode:
+
+Ver resumo do pedido
+
+Aumentar/reduzir quantidade
+
+Remover item
+
+Ver total
+
+Botão “Finalizar Pedido”
+
+Checkout:
+Formulário com:
+
+Nome do cliente
+
+Endereço (opcional)
+
+Forma de entrega (Retirada ou Entrega)
+
+Observações
+
+Após envio, sistema gera mensagem e redireciona para o WhatsApp da loja:
+
+Exemplo de link gerado:
+
+perl
+Copiar
+Editar
+https://wa.me/5519987553029?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido.%0A%0A*Itens:*%0A- Perfume X (2 unid.)%0A- Creme Y (1 unid.)%0A%0A*Nome:* João Silva%0A*Entrega:* Entrega%0A*Endereço:* Rua das Rosas, 100%0A*Observações:* Deixar na portaria
+4. 🧬 Clonagem de Catálogos
+Cada nova loja criada é uma cópia personalizável do catálogo padrão
+
+A loja gerada pode ser editada com:
+
+Logo da consultora
+
+Nome e WhatsApp dela
+
+Produtos diferentes (ou manter padrão)
+
+Clonagem feita:
+
+Automaticamente ao se cadastrar
+
+Ou manualmente pelo admin
+
+5. 💳 Monetização
+Plano único: R$ 29,90 por mês
+
+Lojistas só têm acesso ao painel após pagamento confirmado
+
+Sistema de cobrança por:
+
+Stripe
+
+Mercado Pago
+
+Outro sistema recorrente
+
+Painel admin controla situação de pagamento de cada lojista
+
+6. 🎨 Design e Experiência
+Layout moderno e elegante
+
+Foco em mobile first
+
+Cores: branco, bege, rosé, preto suave
+
+Fontes clean
+
+Produtos bem destacados, com imagens grandes e botão de compra visível
+
+Botão flutuante de WhatsApp (fixo)
+
+Checkout simples e rápido
+
+✅ Funcionalidades Resumidas
+Função	Cliente	Lojista	Admin
+Ver catálogo	✅	✅	✅
+Adicionar ao carrinho	✅	✅	✅
+Finalizar compra (WhatsApp)	✅	✅	✅
+Criar/editar produtos		✅	✅
+Editar nome/logo/whats		✅	✅
+Login e área pessoal	✅	✅	✅
+Clonar catálogo			✅
+Excluir lojas			✅
+Ver estatísticas			✅
+Gerenciar pagamentos			✅

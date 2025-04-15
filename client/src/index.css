@@ -1,0 +1,78 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-pink-50 {
+    @apply text-red-50;
+  }
+  .text-pink-100 {
+    @apply text-red-100;
+  }
+  .text-pink-200 {
+    @apply text-red-200;
+  }
+  .text-pink-300 {
+    @apply text-red-300;
+  }
+  .text-pink-400 {
+    @apply text-red-400;
+  }
+  .text-pink-500 {
+    @apply text-red-500;
+  }
+  .text-pink-600 {
+    @apply text-red-600;
+  }
+  .text-pink-700 {
+    @apply text-red-700;
+  }
+  .text-pink-800 {
+    @apply text-red-800;
+  }
+  .text-pink-900 {
+    @apply text-red-900;
+  }
+
+  .bg-pink-50 {
+    @apply bg-red-50;
+  }
+  .bg-pink-100 {
+    @apply bg-red-100;
+  }
+  .bg-pink-200 {
+    @apply bg-red-200;
+  }
+  .bg-pink-300 {
+    @apply bg-red-300;
+  }
+  .bg-pink-400 {
+    @apply bg-red-400;
+  }
+  .bg-pink-500 {
+    @apply bg-red-500;
+  }
+  .bg-pink-600 {
+    @apply bg-red-600;
+  }
+  .bg-pink-700 {
+    @apply bg-red-700;
+  }
+  .bg-pink-800 {
+    @apply bg-red-800;
+  }
+  .bg-pink-900 {
+    @apply bg-red-900;
+  }
+}
