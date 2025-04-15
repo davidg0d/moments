@@ -1,0 +1,25 @@
+{
+  "include": ["client/src/**/*", "shared/**/*", "server/**/*"],
+  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+    "noEmit": false,               // Alterado para permitir que o TypeScript emita arquivos JS
+    "outDir": "./dist",            // Define o diretório de saída para a compilação
+    "module": "ESNext",            // Certifique-se de que o módulo seja ESNext
+    "target": "ESNext",            // Certifique-se de que o alvo seja ESNext
+    "strict": true,
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "jsx": "preserve",
+    "esModuleInterop": true,       // Garantir que a interoperabilidade com CommonJS esteja ativa
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",    // Garantir a resolução de módulos do Node.js
+    "baseUrl": ".",                // Define a raiz do projeto
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./client/src/*"],
+      "@shared/*": ["./shared/*"]
+    }
+  }
+}
